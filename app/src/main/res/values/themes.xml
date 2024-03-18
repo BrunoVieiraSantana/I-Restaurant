@@ -3,7 +3,7 @@
     <style name="Base.Theme.IRestaurant" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorSecondaryVariant">@color/rose</item>
     </style>
 
     <style name="Theme.IRestaurant" parent="Base.Theme.IRestaurant" />
