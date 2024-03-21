@@ -3,11 +3,13 @@ package com.example.i_restaurant
 import android.app.Activity
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.i_restaurant.databinding.ActivityMainBinding
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,11 +29,11 @@ class MainActivity : AppCompatActivity() {
                 binding.btEntradas.setBackgroundResource(R.drawable.bg_button_enable)
                 binding.btEntradas.setTextColor(Color.WHITE)
                 binding.btPrincipais.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btPrincipais.setTextColor(Color.dark_gray)
+                binding.btPrincipais.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btBebidas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btBebidas.setTextColor(Color.dark_gray)
+                binding.btBebidas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btSobremesas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btSobremesas.setTextColor(Color.dark_gray)
+                binding.btSobremesas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.recyclerViewProducts.visibility = View.INVISIBLE
                 binding.txtListTitle.text = "Entradas"
                 }
@@ -43,11 +45,11 @@ class MainActivity : AppCompatActivity() {
                 binding.btPrincipais.setBackgroundResource(R.drawable.bg_button_enable)
                 binding.btPrincipais.setTextColor(Color.WHITE)
                 binding.btEntradas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btEntradas.setTextColor(Color.dark_gray)
+                binding.btEntradas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btBebidas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btBebidas.setTextColor(Color.dark_gray)
+                binding.btBebidas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btSobremesas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btSobremesas.setTextColor(Color.dark_gray)
+                binding.btSobremesas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.recyclerViewProducts.visibility = View.INVISIBLE
                 binding.txtListTitle.text = "Principais"
             }
@@ -59,11 +61,11 @@ class MainActivity : AppCompatActivity() {
                 binding.btBebidas.setBackgroundResource(R.drawable.bg_button_enable)
                 binding.btBebidas.setTextColor(Color.WHITE)
                 binding.btPrincipais.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btPrincipais.setTextColor(Color.dark_gray)
+                binding.btPrincipais.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btEntradas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btEntradas.setTextColor(Color.dark_gray)
+                binding.btEntradas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btSobremesas.setBackgroundResource(R.drawable.bg_button_disabled)
-                binding.btSobremesas.setTextColor(Color.dark_gray)
+                binding.btSobremesas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.recyclerViewProducts.visibility = View.INVISIBLE
                 binding.txtListTitle.text = "Bebidas"
             }
@@ -74,17 +76,15 @@ class MainActivity : AppCompatActivity() {
             if (clicked){
                 binding.btSobremesas.setBackgroundResource(R.drawable.bg_button_enable)
                 binding.btSobremesas.setTextColor(Color.WHITE)
-                binding.btBebidas.setBackgroundResource(R.drawable.bg_button_disable)
-                binding.btBebidas.setTextColor(Color.dark_gray)
-                binding.btPrincipais.setBackgroundResource(R.drawable.bg_button_disable)
-                binding.btPrincipais.setTextColor(Color.dark_gray)
-                binding.btEntradas.setBackgroundResource(R.drawable.bg_button_disable)
-                binding.btEntradas.setTextColor(Color.dark_gray)
+                binding.btBebidas.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btBebidas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
+                binding.btPrincipais.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btPrincipais.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
+                binding.btEntradas.setBackgroundResource(R.drawable.bg_button_disabled)
+                binding.btEntradas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.recyclerViewProducts.visibility = View.INVISIBLE
                 binding.txtListTitle.text = "Sobremesas"
             }
-        }
-
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
