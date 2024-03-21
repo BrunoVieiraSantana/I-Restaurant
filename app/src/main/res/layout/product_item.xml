@@ -59,6 +59,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/bg_button_enable"
+            android:src="@drawable/ic_add"
             app:layout_constraintStart_toEndOf="@+id/txtName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
