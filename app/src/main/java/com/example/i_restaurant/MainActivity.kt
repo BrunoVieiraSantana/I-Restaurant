@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                 binding.btBebidas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
                 binding.btSobremesas.setBackgroundResource(R.drawable.bg_button_disabled)
                 binding.btSobremesas.setTextColor(ContextCompat.getColor(this, R.color.dark_gray))
-                binding.recyclerViewProducts.visibility = View.INVISIBLE
+                binding.recyclerViewProducts.visibility = View.VISIBLE
                 binding.txtListTitle.text = "Principais"
             }
         }
