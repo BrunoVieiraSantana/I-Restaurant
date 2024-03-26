@@ -13,17 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Finalizar Pedido"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:fontFamily="@font/big_noodle_titling"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Order:"
-        android:textSize="18sp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:fontFamily="@font/big_noodle_titling"/>
 
     <TextView
         android:id="@+id/txtTotal"
@@ -31,10 +33,11 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="@color/dark_gray"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="start"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:fontFamily="@font/big_noodle_titling"/>
     
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btFinish"
@@ -42,11 +45,12 @@
         android:layout_height="wrap_content"
         android:text="Finalizar"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:padding="15dp"
         app:cornerRadius='30dp'
         android:background="@drawable/bg_button_disabled_finish"
         android:layout_margin="20dp"
+        android:fontFamily="@font/big_noodle_titling"/>
 
 </LinearLayout>

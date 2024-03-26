@@ -8,7 +8,20 @@
     android:orientation="vertical"
     android:background="@color/light_gray"
     tools:context=".ProductDetails">
-    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="413dp"
+            android:layout_height="436dp"
+            android:background="@drawable/bg_product_top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
     <ImageView
         android:id="@+id/btBack"
         android:layout_width="wrap_content"
@@ -23,49 +36,64 @@
         android:scaleType="centerCrop"
         android:layout_gravity="center"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <Button
-            android:id="@+id/btToDecrease"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="-"
-            android:textSize="18sp"
-            android:textColor="@color/dark_gray"
-            android:textStyle="bold"
-            app:cornerRadius="30dp"
-            android:backgroundTint="@color/white"
-            android:layout_margin="10dp"
-            />
-
-        <TextView
-            android:id="@+id/txtAmount"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            android:textColor="@color/dark_gray"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            />
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="164dp">
 
-        <Button
-            android:id="@+id/btIncrease"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:text="+"
-            android:textSize="18sp"
-            android:textColor="@color/dark_gray"
-            android:textStyle="bold"
-            app:cornerRadius="30dp"
-            android:backgroundTint="@color/white"
-            android:layout_margin="10dp"
-            />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/btToDecrease"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="-"
+                    android:textSize="23sp"
+                    android:textColor="@color/rose"
+                    android:textStyle="bold"
+                    app:cornerRadius="30dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:elevation="-2dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/big_noodle_titling"
+                android:layout_gravity="center_vertical"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/btIncrease"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:textSize="23sp"
+                    android:textColor="@color/rose"
+                    android:textStyle="bold"
+                    app:cornerRadius="30dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:elevation="-2dp"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,10 +105,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mixes Pizza"
-            android:textSize="18sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:gravity="start"
             android:layout_margin="20dp"
+            android:fontFamily="@font/big_noodle_titling"
+
             />
 
         <TextView
@@ -88,11 +118,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="R$ 12.00"
-            android:textSize="18sp"
+            android:textSize="25sp"
             android:textColor="@color/rose"
             android:textStyle="bold"
             android:gravity="end"
             android:layout_margin="20dp"
+            android:fontFamily="@font/big_noodle_titling"
             />
 
     </LinearLayout>
@@ -101,9 +132,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bebidas"
-        android:textSize="18sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:layout_margin="20dp"
+        android:fontFamily="@font/big_noodle_titling"
         />
 
     <RadioGroup
@@ -116,19 +148,28 @@
             android:id="@+id/btCocaLata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Coca - Lata"/>
+            android:text="Coca - Lata"
+            android:textSize="20sp"
+            android:fontFamily="@font/big_noodle_titling"
+            android:textColor="@color/dark_gray"/>
 
         <RadioButton
             android:id="@+id/btFantaLata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fanta - Lata"/>
+            android:text="Fanta - Lata"
+            android:textSize="20sp"
+            android:fontFamily="@font/big_noodle_titling"
+            android:textColor="@color/dark_gray"/>
 
         <RadioButton
             android:id="@+id/btPepsiLata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pepsi - Lata"/>
+            android:text="Pepsi - Lata"
+            android:textSize="20sp"
+            android:fontFamily="@font/big_noodle_titling"
+            android:textColor="@color/dark_gray"/>
 
     </RadioGroup>
 
@@ -137,13 +178,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Confirmar"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:backgroundTint="@color/rose"
         android:padding="10dp"
         app:cornerRadius="10dp"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:fontFamily="@font/big_noodle_titling"/>
 
 
 
